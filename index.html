@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:wght@400;700&family=Luckiest+Guy&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Birbs</title>
+</head>
+
+<body>
+    <aside id="startGameModal">
+        <h2 class="f-1" id="newRecord">new record!</h2>
+        <h2 class="f-1">best score: <span id="bestScore"></span></h2>
+        <a id="startBtn" class="f-1">start game</a>
+    </aside>
+    
+    <nav class="navigation">
+       <h2 class="f-1">score: <span id="scoreCount">0</span></h2>
+       <h2 class="f-1 w-200" data-live-container>lives: 
+            <ion-icon data-live name="heart-outline"></ion-icon>
+            <ion-icon data-live name="heart-outline"></ion-icon>
+            <ion-icon data-live name="heart-outline"></ion-icon>
+       </h2> 
+    </nav>
+
+    <div id="playArea">
+        <div id="bird"></div>
+    </div>
+    
+</body>
+</html>

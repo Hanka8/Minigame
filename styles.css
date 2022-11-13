@@ -1,0 +1,158 @@
+:root {
+    --violet: #3A0842;
+    --blue: #391463;
+    --gold: #BFAE48;
+    --green: #5FAD41;
+    --cyan: #2D936C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.f-1 {
+  font-family: 'Bungee', cursive;  
+}
+
+.f-2 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.f-3 {
+   font-family: 'Roboto', sans-serif; 
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  position: absolute;
+  top: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: antiquewhite;
+}
+
+#playArea {
+  width: 80%;
+  height: 180px;
+  background-color: rgba(240, 248, 255, 0.26);
+  backdrop-filter: blur(1rem);
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+#bird {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  transition: 300ms;
+}
+
+.obstacle {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.a {
+  background-color: rgb(19, 0, 54);
+  bottom: 5px;
+}
+
+.b {
+  background-color: rgb(49, 0, 82);
+  bottom: 25px;
+}
+
+.c {
+  background-color: #3A0842;
+  bottom: 45px;
+}
+
+.d {
+  background-color: #481485;
+  bottom: 65px;
+}
+
+.e {
+  background-color: #d30990;
+  bottom: 85px;
+}
+
+.f {
+  background-color: #ff006a;
+  bottom: 105px;
+}
+
+.g {
+  background-color: #ff0037;
+  bottom: 125px;
+}
+
+#startGameModal {
+  border: 10px solid #ff0037;
+  color: #ff0037;
+  text-shadow: 2px 2px blue;
+  background-color: var(--violet);
+  position: absolute;
+  width: 80vw;
+  height: 70vh;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 300ms;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#startGameModal.hide {
+  width: 0;
+  top: -355px;
+}
+
+#startBtn {
+  cursor: pointer;
+  padding: 5%;
+}
+
+#startBtn:hover {
+  scale: 1.2;
+}
+
+#newRecord {
+  display: none;
+}
+
+.live {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    background-color: gold;
+    border-radius: 50%;
+    z-index: -1;
+}
